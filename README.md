@@ -12,6 +12,7 @@ This project leverages the Brazilian Chamber of Deputies API to collect, process
 - Key Libraries: Requests, Pandas, Matplotlib/Seaborn for analysis and visualizations.
 
 **Data Pipeline Architecture**
+
 The project utilizes a robust data pipeline to process and analyze parliamentary expenses efficiently. Below is an overview of the architecture:
 
 Steps in the Pipeline:
