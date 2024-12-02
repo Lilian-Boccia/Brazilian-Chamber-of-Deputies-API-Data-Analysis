@@ -14,7 +14,7 @@ This project leverages the Brazilian Chamber of Deputies API to collect, process
 **How to Use**
 1. Download the Project:
 - Clone the repository using:
-git clone https://github.com/Lilia-Boccia/Brazilian-Chamber-of-Deputies-API-Data-Analysis.git  
+git clone https://github.com/Lilian-Boccia/Brazilian-Chamber-of-Deputies-API-Data-Analysis.git  
 
 2. Set Up Your Environment:
 - Ensure you have Python installed on your system. Install required libraries directly using:
