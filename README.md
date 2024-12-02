@@ -11,6 +11,18 @@ This project leverages the Brazilian Chamber of Deputies API to collect, process
 - Python for API integration, data cleaning, and generating insights.
 - Key Libraries: Requests, Pandas, Matplotlib/Seaborn for analysis and visualizations.
 
+**Data Pipeline Architecture**
+The project utilizes a robust data pipeline to process and analyze parliamentary expenses efficiently. Below is an overview of the architecture:
+
+Steps in the Pipeline:
+1. Data Ingestion: Batch data is sourced from the Brazilian Chamber of Deputies' API.
+2. Raw Data Storage (Bronze Layer/Data Lake): Data is stored in Hive in Delta format, preserving the raw state for traceability and reprocessing.
+3. Data Transformation and Cleaning (Silver Layer): Databricks processes raw data by applying normalizations, corrections, and aggregations. Transformed data is stored in Snowflake as transactional and normalized tables.
+4. Structured Data Storage (Gold Layer): Final data is stored in Snowflake as cubes and metrics, optimized for analysis and tailored to departmental needs such as Sales, Marketing, and Finance.
+5. Self-Service Consumption Layer (BI): Looker Studio is integrated to allow end users to explore and analyze data stored in Snowflake independently.
+
+![Data Pipeline](https://github.com/Lilian-Boccia/Brazilian-Chamber-of-Deputies-API-Data-Analysis/blob/main/Data%20Pipeline%20-%20Brazilian%20Chamber%20of%20Deputies'%20API.drawio.png)
+
 **How to Use**
 1. Download the Project:
 - Clone the repository using:
